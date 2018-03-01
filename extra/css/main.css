@@ -1,0 +1,375 @@
+*{margin: 0;padding: 0;font-weight: normal;}
+a{text-decoration: none;}
+li{list-style-type: none;}
+[v-cloak]{display: none;}
+.turn,.photo,.more,.top,.ad,.ads,#header a,#header em,#nav li,.content span,.content div,.top10 span,.recommend li,#strategy .episode>li,#tip .read{
+	cursor: pointer;
+}
+/*--line--*/
+#line{
+	position: absolute;top: 0px;width: 1349px;height: 60px;
+	background-color: rgb(100,100,100);
+}
+#line #header{
+	position: absolute;top: 0px;left: 50%;margin-left: -675px;padding-left: 39px;width: 1310px;height: 60px;
+	background-color: rgb(100,100,100);
+	perspective: 100px;
+}
+#header a{
+	display: table-cell;vertical-align: middle;width: 80px;height: 60px;
+	text-align: center;font: 18px/1 verdana;color: lightskyblue;
+	border-radius: 5px;
+	transition: transform 1s;
+}
+#header a:hover{
+	transform: rotateX(-360deg);
+}
+#header p{
+	position: absolute;top: 0px;left: 155px;height: 60px;
+	font: 16px/60px arial;color: white;
+}
+#header p em{
+	font-weight: bold;color: cyan;
+}
+#header p em:hover{
+	animation: fade 1s infinite;
+}
+@keyframes fade{
+	from{color: cyan;}50%{color: rgb(100,100,100);}to{color: cyan;}
+}
+#header .time{
+	position: absolute;left: 580px;
+	white-space: nowrap;
+}
+.time span{color: red;}
+.time span:nth-of-type(4){color: white;}
+.time strong{color: palegreen;}
+/*--container--*/
+#container{
+	position: absolute;top: 60px;left: 50%;margin-left: -675px;width: 1349px;
+}
+#container h1{
+	position: relative;z-index: 1;margin-top: 85px;
+	text-align: center;font: 70px/1 kaiti;color: darkturquoise;
+}
+#container>h2{
+	position: relative;z-index: 1;margin-top: 15px;
+	text-align: center;font: 35px/1 kaiti;color: lightsteelblue;
+}
+/*--container nav--*/
+#container #nav{
+	position: absolute;top: 0px;left: 0px;z-index: 2;width: 1349px;height: 60px;
+}
+#container #nav.fixed{
+	position: fixed;
+	box-shadow: 0 1px 5px 0px gray;
+	background: linear-gradient(45deg,rgba(255,255,255,0) 4%,white 5%,white 9%,rgba(255,255,255,0) 10%,rgba(255,255,255,0) 14%,white 15%,white 19%,rgba(255,255,255,0) 20%,rgba(255,255,255,0) 24%,white 25%,white 75%,rgba(255,255,255,0) 76%,rgba(255,255,255,0) 80%,white 81%,white 85%,rgba(255,255,255,0) 86%,rgba(255,255,255,0) 90%,white 91%,white 95%,rgba(255,255,255,0) 96%);
+}
+#nav ul{
+	position: absolute; left: 365px;
+}
+#nav ul li{
+	float: left;padding: 0px 30px;
+	font: 16px/60px verdana;
+}
+#nav li:hover{
+	background-color: wheat;
+}
+/*--container choice--*/
+#container #choice{
+	position: absolute;top: 60px;width: 100%;height: 490px;
+	background-image: url(../img/choice.jpg);background-size: 1349px 843px;
+}
+#choice .turn{
+	position: absolute;top: 265px;left: 30px;width: 22px;height: 40px;
+	background-image: url(../img/icon-shift.png);background-size: 84px 40px;
+	transition: all 0.3s;
+}
+#choice .turn.reverse{
+	left: auto;right: 30px;
+	background-position-x: -22px;
+}
+#choice .turn:hover{
+	transform: scale(1.5);
+}
+#choice #carousel{
+	position: absolute;top: 200px;left: 83px;
+	width: 1184px;height: 240px;
+	overflow: hidden;
+}
+#carousel ul{
+	margin-left: -592px;width: 2368px;
+}
+#carousel .photo{
+	float: left;margin: 0 8px;width: 280px;height: 170px;
+	background-size: 300px 170px;border-radius: 4px;
+	color: black;transition: color 0.3s;
+}
+#carousel .photo:hover{
+	color: white;
+}
+#carousel .no1{background-image: url(../img/news1.jpg);}
+#carousel .no2{background-image: url(../img/news2.jpg);}
+#carousel .no3{background-image: url(../img/china1.jpg);}
+#carousel .no4{background-image: url(../img/china2.jpg);}
+#carousel .no5{background-image: url(../img/world1.jpg);}
+#carousel .no6{background-image: url(../img/world2.jpg);}
+#carousel .no7{background-image: url(../img/strategy1.jpg);}
+#carousel .no8{background-image: url(../img/tip.jpg);}
+.photo .shadow{
+	position: absolute;bottom: 70px;width: 280px;
+	text-align: center;line-height: 30px;
+	background-color: rgba(192,192,192,0.9);
+	height: 0px;transition: height 0.5s;
+}
+.photo:hover .shadow{
+	height: 30px;
+	}
+.shadow span{
+	color: red;
+	opacity: 0;transition: opacity 0.5s;
+}
+.photo:hover .shadow span{
+	opacity: 1;
+}
+.photo h3{
+	margin-top: 170px;margin-left: 10px;padding-top: 10px;width: 260px;
+	text-align: center;font: 14px/14px verdana;
+}
+#choice h2{
+	position: absolute;bottom: 20px;width: 100%;
+	text-align: center;color: silver;
+}
+/*--container .part--*/
+#container .part{
+	position: relative;padding-bottom: 20px;
+	overflow: hidden;
+}
+.part h2{
+	margin-top: 20px;margin-left: 100px;width: 200px;height: 77px;
+	text-align: center;font: bold 24px/60px verdana;color: indianred;
+	background-image: url(../img/title.png);background-size: 200px 77px;
+}
+.part .content{
+	position: relative;left: 100px;margin-top: 20px;
+	padding-top: 10px;width: 800px;
+	border-top: 2px solid lightgray;
+}
+.part .ad{
+	position: absolute;top: -95px;left: 220px;width: 500px;height: 70px;
+	background-size: 500px 70px;
+}
+.part .more{
+	position: absolute;top: -30px;right: 0px;padding: 2px 10px;
+	font: 14px/18px verdana;color: dodgerblue;
+	border: 1px solid silver;border-radius: 3px;
+	transition: all 0.2s;
+}
+.more:hover{
+	color: white;
+	background-color: dodgerblue;
+}
+.content li{
+	padding: 18px 0px;width: 500px;
+	border-bottom: 1px dotted silver;
+}
+.content li h3 span{
+	font: bold 20px/1 arial;color: rgb(0,150,155);
+}
+.content li h4{
+	margin-top: 15px;
+}
+.content li h4 span{
+	font: 14px/22px auto;
+}
+.content>div{
+	position: absolute;top: 30px;right: 0px;width: 249px;height: 180px;
+	border-top: 1px solid silver;
+	overflow: hidden;
+}
+.content div div{
+	width: 100%;
+	height: 150px;
+	background-size: 250px 150px;
+	transition: transform 0.5s;
+}
+.content div p{
+	position: absolute;bottom: 0px;width: 100%;height: 29px;
+	text-align: center;font: 10px/29px auto;
+	background-color: white;border-top: 1px solid silver;
+}
+.content .next{
+	top: 220px;
+}
+.content div:hover div{
+	transform: scale(1.2);
+}
+.content div:hover p{
+	text-decoration: underline;
+}
+/*--container news--*/
+#news{
+	margin-top: 345px;
+}
+#news .ad{
+	background-image: url(../img/ad1.jpg);
+}
+#news .content div div{
+	background-image: url(../img/news2-2.jpg);
+}
+#news .next{
+	height: 150px;
+	border-top: none;
+}
+#news .content .next div{
+	background: url(../img/ad0.jpg) -260px;background-size: auto 150px;
+}
+#news .next p{
+	top: 65px;
+	font-size: 20px;color: white;
+	background-color: transparent;border-top: none;
+}
+#news .next:hover p{
+	text-decoration: none;
+}
+/*--news top10--*/
+#news .top10{
+	position: absolute;top: 30px;right: 40px;padding-top: 30px;width: 360px;
+}
+.top10 h3{
+	position: absolute; top: 0px;
+	font: bold 20px/1 arial;
+}
+.top10 li{
+	padding: 15px 0px;
+	font: 14px/1 auto;
+}
+.top10 strong{
+	margin-right: 8px;padding: 2px 7px;
+	font: bold 13px/1 arial;color: white;
+	background-color: silver;border-radius: 4px;
+}
+.top10 .red strong{
+	background-color: hotpink;
+}
+.top10 li:last-of-type strong{
+	padding: 2px 4px;
+}
+.top10 span:hover{
+	color: deepskyblue;
+}
+/*--container china--*/
+#china .ad{background-image: url(../img/ad2.jpg);}
+#china div div{background-image: url(../img/china1-2.jpg);}
+#china .next div{background-image: url(../img/china2-2.jpg);}
+/*--china recommend--*/
+.part .recommend{
+	position: absolute;top: 30px;right: 40px;padding-top: 40px;width: 360px;
+}
+.recommend>h3{
+	position: absolute; top: 0px;
+	font: bold 20px/1 arial;
+}
+.recommend li{
+	margin-bottom: 10px;margin-left: 55px;width: 250px;height: 150px;
+	background-size: 250px 150px;border: 1px solid gray;
+}
+.recommend li:nth-of-type(1){background-image: url(../img/china4.jpg);}
+.recommend li:nth-of-type(2){background-image: url(../img/china5.jpg);}
+.recommend li:nth-of-type(3){background-image: url(../img/china6.jpg);}
+.recommend .shade{
+	margin-top: 0px;width: 250px;height: 150px;
+	background-color: black;
+}
+.recommend li p{
+	position: relative;margin-top: -83px;z-index: 1;opacity: 0;
+	text-align: center;color: white;
+	transition: all 0.5s;
+}
+.recommend li:hover .shade{
+	opacity: 0.5;
+}
+.recommend li:hover p:nth-child(2){
+	opacity: 1;
+	transform: scale(1.4);
+}
+/*--container world--*/
+#world .ad{
+	background-image: url(../img/ad3.jpg);
+}
+#world div div{background-image: url(../img/world1-2.jpg);}
+#world .next div{background-image: url(../img/world2-2.jpg);}
+#world .recommend li:nth-of-type(1){background-image: url(../img/world4.jpg)}
+#world .recommend li:nth-of-type(2){background-image: url(../img/world5.jpg)}
+#world .recommend li:nth-of-type(3){background-image: url(../img/world6.jpg)}
+/*--container strategy--*/
+.ads{
+	position: absolute;top: -110px;left: 200px;width: 900px;height: 87px;
+	background-image: url(../img/ad4.jpg);background-size: 900px 87px;
+}
+.part .episode{
+	position: relative;margin-top: 20px;margin-left: 100px;width: 1160px;
+	border-top: 2px solid lightgray;
+}
+.episode>li{
+	margin-left: -20px;padding: 28px 20px 18px;width: 560px;
+}
+.episode>li:nth-of-type(2){
+	position: absolute;top: 0px;left: 600px;
+}
+#strategy .episode>li:hover{
+	color: peru;
+	background-color: whitesmoke;
+}
+.episode li h3{
+	font: bold 20px/1 arial;color: lightseagreen;
+}
+.episode li h4{
+	margin-top: 15px;
+	font: 16px/2 auto;
+}
+.episode li em{
+	padding: 0px 1em;
+}
+.episode li ul{
+	margin-top: 20px;margin-left: -10px;height: 110px;
+}
+.episode li li{
+	float: left;margin-left: 10px;width: 180px;height: 110px;
+	background-size: 180px 110px;
+}
+.episode li li:nth-of-type(1){background-image: url(../img/strategy1-2.jpg);}
+.episode li li:nth-of-type(2){background-image: url(../img/strategy1-3.jpg);}
+.episode li li:nth-of-type(3){background-image: url(../img/strategy1-4.jpg);}
+.episode .second li:nth-of-type(1){background-image: url(../img/strategy2.jpg);}
+.episode .second li:nth-of-type(2){background-image: url(../img/strategy2-2.jpg);}
+.episode .second li:nth-of-type(3){background-image: url(../img/strategy2-3.jpg);}
+/*--container tip--*/
+#container #tip{
+	padding-bottom: 10px;
+}
+#tip .ads{
+	background-image: url(../img/ad5.jpg);
+}
+#tip strong{
+	font-weight: bold;
+}
+#tip .read{
+	font-size: 16px;
+	color: firebrick; 
+}
+#tip .read:hover{
+	color: rgb(255,100,100); 
+}
+#container .top{
+	position: fixed;bottom: 10px;z-index: 2;display: none;width: 48px;height: 75px;
+	background-image: url(../img/icon-top.png);
+}
+.top:hover{
+	background-position: -48px;
+}
+#container .end{
+	height: 50px;
+	text-align: center;font: bold 15px/50px verdana;color: gray;
+	background-color: gainsboro;
+}

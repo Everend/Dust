@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>主页</title>
+		<link href="../extra/css/main.css" rel="stylesheet" type="text/css">
+		<script src="../extra/js/jquery-3.3.1.min.js"></script>
+		<script src="../extra/js/vue.min.js"></script>
+		<script src="../extra/js/main.js"></script>
+	</head>
+	<body>
+		<div id="line">
+			<div id="header">
+				<a href="/"title="Back to Home Page">&nbsp;July↺ Journey</a>
+				<p>欢迎访问<em>七月之旅</em>，既然来了还在等什么，随便看看吧！</p>
+				<!-- <p class="time">现在是<span></span>年<span></span>月<span></span>日星期<span></span><span></span>时<span></span>分<span></span>秒，您所在的<strong>台州</strong>地区天气为<strong>阴</strong>，气温为<strong>低温6℃</strong>，<strong>高温11℃</strong>。</p> -->
+				<p class="time">现在是<span></span>年<span></span>月<span></span>日星期<span></span><span></span>时<span></span>分<span></span>秒，您所在的<strong></strong>地区天气为<strong></strong>，气温为<strong></strong>，<strong></strong>。</p>
+			</div>
+		</div>
+		<div id="container">
+			<div id="nav">
+				<ul>
+					<li>资讯中心</li>
+					<li>地理中国</li>
+					<li>环游世界</li>
+					<li>旅游攻略</li>
+					<li>出行常识</li>
+				</ul>
+			</div>
+			<h1>七月之旅</h1>
+			<h2>世界那么大 不妨去看看</h2>
+			<div id="choice">
+				<p class="turn"></p>
+				<p class="turn reverse"></p>
+				<div id="carousel">
+					<ul>
+						<li class="photo" v-cloak v-for="(item,index) in items" v-bind:class="[type[index].no]">
+							<p class="shadow"><span>{{ item.name }}</span></p>
+							<h3>{{ item.text1 }}<br>{{ item.text2 }}</h3>
+						</li>
+					</ul>
+				</div>
+				<h2>以上为部分节选，更多精彩内容请往下看。</h2>
+			</div>
+			<div id="news" class="part">
+				<h2>资讯中心</h2>
+				<ul class="content">
+					<p class="ad"></p>
+					<p class="more">更多</p>
+					<div><div></div><p>齐聚都江堰</p></div>
+					<div class="next"><div></div><p>广告位出租</p></div>
+					<li>
+						<h3><span>2018春节旅游创收4750亿元 同比增长12.6％</span></h3>
+						<h4><span>我国假日市场持续增长，从全国旅游数据来看，民俗旅游、冰雪温泉等休闲度假的旅游方式更受游客欢迎。</span></h4>
+					</li>
+					<li>
+						<h3><span>十国小记者齐聚都江堰 体验传统中国年</span></h3>
+						<h4><span>来自世界十个不同国家的"熊猫小记者"家庭，与成都志愿者家庭组成一个特殊的旅行团，到"熊猫家园"都江堰全方位感受当地文化，体验传统中国年。</span></h4>
+					</li>
+					<li>
+						<h3><span>中国上班族旅行研究报告 多数人旅行时工作</span></h3>
+						<h4><span>目前，旅游已成为大部分中国白领的主要度假方式。蚂蜂窝旅行网与领英中国联合发布的研究报告指出，中国白领中有超过八成人在旅行中仍会工作。</span></h4>
+					</li>
+				</ul>
+				<ul class="top10">
+					<h3>热点排行</h3>
+					<li class="red"><h4><strong>1</strong><span>大数据解密中国网购啤酒 青岛啤酒最受欢迎</span><h4></li>
+					<li class="red"><h4><strong>2</strong><span>世界旅游联盟凸显中国担当 旅游业界好评如潮</span><h4></li>
+					<li class="red"><h4><strong>3</strong><span>黑龙江重点建设冰雪旅游项目 打造"一区四带"</span><h4></li>
+					<li><h4><strong>4</strong><span>延边·韦特恩国际自行车旅游节本月24日开幕</span><h4></li>
+					<li><h4><strong>5</strong><span>7名游客烽火台避雨遭雷击 或因手机信号引起</span><h4></li>
+					<li class="redirect"><h4><strong>6</strong><span>人民币对美升值对欧澳贬值 国庆出游去哪更省</span><h4></li>
+					<li class="redirect"><h4><strong>7</strong><span>西安市旅游局海外新媒体平台上线 树国际形象</span><h4></li>
+					<li class="redirect"><h4><strong>8</strong><span>摩尔多瓦推出签证新举措 部分中国公民可免签</span><h4></li>
+					<li class="redirect"><h4><strong>9</strong><span>国家旅游局：做好2017国庆中秋假日旅游工作</span><h4></li>
+					<li class="redirect"><h4><strong>10</strong><span>民俗民族等特色旅游项目促湖南城步黄金周吸金</span><h4></li>
+				</ul>
+			</div>
+			<div id="china" class="part">
+				<h2 class="title">地理中国</h2>
+				<ul class="content">
+					<p class="ad"></p>
+					<p class="more">更多</p>
+					<div><div></div><p>黄山云海</p></div>
+					<div class="next"><div></div><p>熊猫放归地石棉</p></div>
+					<li>
+						<h3><span>群峰时隐时现 黄山云海翻滚在千山万壑</span></h3>
+						<h4><span>新年的黄山，经过雨雪天气的洗礼，空气格外清新，一尘不染，能见度特别好。登高望远，群峰、奇松、怪石一览无余，冰雪点缀在峰石中，滚滚的云海时而翻涌如浪花飞溅，时而舒展如霓裳羽衣……高大的山峰若隐若现在云海之中。</span></h4>
+					</li>
+					<li>
+						<h3><span>高山流水、鬼斧神工 神奇的熊猫放归地石棉</span></h3>
+						<h4><span>石棉，国宝大熊猫放归地。这里栖息着众多自然生灵。也绽放着各色文明。和我来石棉走一走，感受自然万物之魂。</span></h4>
+					</li>
+					<li>
+						<h3><span>冬日水磨沟 一个山雪辉映的童话世界</span></h3>
+						<h4><span>白雪压过枝头，千姿百态的雪凇、雾凇、冰挂、冰凌构成了水磨沟景区冬季景观一绝，从层林尽染的山麓、白雪皑皑的山腰到幽静的雪野……大自然以她精巧的妙笔将处于景区中心地带的秦巴草甸点缀成了现实版的"童话世界"、"冰雪王国"。</span></h4>
+					</li>
+				</ul>
+				<ul class="recommend">
+					<h3>每日推荐</h3>
+					<li><p class="shade"></p><p class="theme">甘孜雅砻江畔湿地</p></li>
+					<li><p class="shade"></p><p class="theme">达古冰山</p></li>
+					<li><p class="shade"></p><p class="theme">贺兰山岩画</p></li>
+				</ul>
+			</div>
+			<div id="world" class="part">
+				<h2 class="title">环游世界</h2>
+				<ul class="content">
+					<p class="ad"></p>
+					<p class="more">更多</p>
+					<li>
+						<h3><span>极光邂逅火山爆发 捕捉百年一遇壮观景色</span></h3>
+						<h4><span>火山喷发、极光、星空同时出现的画面，在带给我们极强视觉冲击的同时，也震撼着我们的心灵。而这组作品的完成，花费了摄影师James Appleton长达7年的时间在冰岛蹲点。</span></h4>
+					</li>
+					<li>
+						<h3><span>令人惊艳的视觉之旅 英国的星空可以这么美</span></h3>
+						<h4><span>史蒂夫说著名地标性建筑多拍摄于白天，之后他会在电脑上将五六张照片堆叠起来，以提高图片的整体质量。所以，他拍摄的每张图片都明暗对比鲜明，既保留了地标性建筑的美感，又清晰地展现出令人惊叹的银河。</span></h4>
+					</li>
+					<li>
+						<h3><span>屏住呼吸 一起去看看世界尽头是什么样子的</span></h3>
+						<h4><span>孤独的南半球，一片蔚蓝色世界。一群相互依偎的企鹅在这里繁衍生息。地球极点，成就了这一块纯粹的净土。</span></h4>
+					</li>
+					<div><div></div><p>极光火山</p></div>
+					<div class="next"><div></div><p>多塞特星空</p></div>
+				</ul>
+				<ul class="recommend">
+					<h3>每周精选</h3>
+					<li><p class="shade"></p><p class="theme">巴塔哥尼亚原驼</p></li>
+					<li><p class="shade"></p><p class="theme">帕劳</p></li>
+					<li><p class="shade"></p><p class="theme">科尔多瓦庭院</p></li>
+				</ul>
+			</div>
+			<div id="strategy" class="part">
+				<h2 class="title">旅游攻略</h2>
+				<ul class="episode">
+					<p class="ads"></p>
+					<p class="more">更多</p>
+					<li>
+						<h3>富士山和白川乡 信仰的对象与艺术的源泉</h3>
+						<h4><em></em>临近年尾，眼看今年的年假即将过期作废，出游的心又开始萌动。本打算报个邮轮省心，然而双11临近，偶然发现吉祥航空名古屋往返的机票堪比白菜价，于是在连续向南了两季之后，决定本年度往东，走一下日本中部的升龙道吧，就初步订下了名古屋-松本-平汤-新穗高-飞弹古川-白川乡-高山-岐阜-名古屋的行程。</h4>
+						<ul><li></li><li></li><li></li></ul>
+					</li>
+					<li class="second">
+						<h3>散落在雪山屋脊的星辰 穿梭在云中雾里的脚印</h3>
+						<h4><em></em>将一段文字记录在字行之间，也许才是一段旅程最好的收尾。<br>
+						<em></em>西藏就像一粒种子，也不知何时扎根在了心底，使我一直萌生着窥探这神秘地方的念想。12年毕业季凑不到人错过了一次，和家中大王去喀纳斯又错过了15年的国庆，直到这次，西行的路来得如此艰难，而一切却又似乎都是水到渠成。</h4>
+						<ul><li></li><li></li><li></li></ul>
+					</li>
+				</ul>
+			</div>
+			<div id="tip"class="part">
+				<h2 class="title">出行常识</h2>
+				<ul class="episode">
+					<p class="ads"></p>
+					<p class="more">更多</p>
+					<li>
+						<h3>穷游小常识 这30条背包穷游客不得不看</h3>
+						<h4><em></em>一说到旅游，很多人就会觉得是败家的奢侈行为。其实不然。旅游，并不是有钱人的专利。旅游，可以在节约的前提下实现品质与品味并重。节约在于生活中的每个细节，旅游中也有理财知识，通过一些小技巧可以为自己省下很多钱。<br>
+							<em></em><strong>行</strong>：<br>
+							<em></em>1、淡季出行，是省钱的基础。<br>
+							<em></em>2、路线设计合理，少走重复路，省下的是大钱。<br>
+							<em></em>3、包车时，要先和司机讲好如果你要中途载别的乘客，价格就要便宜一些。<br>
+							<em></em>4、不乘飞机，乘火车。有时乘火车比乘汽车可以省更多的钱。买火车票，如果有非空调车，可以买非空调车的车票，这样可以节省一半的钱，但当然车况会差一些。买机票前多打几个电话，并在电话中讲价。<br>
+							<em></em>5、在城市内多乘公交车。<strong class="read">>>阅读更多<<</strong>
+						</h4>
+					</li>
+					<li class="second">
+						<h3>自助游要做足功课：选择适合线路 时刻绷紧安全弦</h3>
+						<h4>
+							<em></em>东方网10月4日消息：据《劳动报》报道，越来越多游客不愿意受跟团游的约束，让自助游人群越来越庞大，不过自助游也并不是想象中的那么轻松惬意，有很多需要注意的，旅途中的陷阱并不比跟团少，因此想要自助出行时，一定要做足功课，小心谨慎。<br>
+							<em></em><strong>选择适合的线路</strong><br>
+							<em></em>自助游有很多种线路，比如安逸型的、购物型的、探险型等，对于想出游的游客来讲，只能是按照自己的实际情况来选择是否应该自助。如去海边休闲度假，去中国香港、新加坡购物等，像这样比较轻松安逸的线路，自助游的人群比较广泛，而且此类线路的自由行产品也比较丰富，适合大多数人。但是经验丰富、体力充沛的年轻人喜欢玩徒步登山、攀岩等户外运动项目，此类需量力而行。一位资深“驴友”认为：“出行前一定要理性评估、计划，要谨慎选择旅游线路，安全第一。<strong class="read">>>阅读更多<<</strong>
+						</h4>
+					</li>
+				</ul>
+			</div>
+		<p class="top"></p>
+		<p class="end">Copyright © 2018 Everend. All rights reserved.</p>
+		</div>
+	</body>
+</html>

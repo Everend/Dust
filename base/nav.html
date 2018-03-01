@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>导航</title>
+		<link href="/extra/css/nav.css" rel="stylesheet" type="text/css">
+		<script src="/extra/js/jquery-3.3.1.min.js"></script>
+		<script src="/extra/js/vue.min.js"></script>
+		<script src="/extra/js/vue-resource-1.3.6.min.js"></script>
+		<script src="/extra/js/nav.js"></script>
+	</head>
+	<body>
+		<div id="line">
+			<div id="header">
+				<a href="/"title="Back to Home Page">&nbsp;July↺ Journey</a>
+				<p>欢迎访问<em>七月之旅</em>，既然来了还在等什么，随便看看吧！</p>
+				<!-- <p class="time">现在是<span></span>年<span></span>月<span></span>日星期<span></span><span></span>时<span></span>分<span></span>秒，您所在的<strong>台州</strong>地区天气为<strong>阴</strong>，气温为<strong>低温6℃</strong>，<strong>高温11℃</strong>。</p> -->
+				<p class="time">现在是<span></span>年<span></span>月<span></span>日星期<span></span><span></span>时<span></span>分<span></span>秒，您所在的<strong></strong>地区天气为<strong></strong>，气温为<strong></strong>，<strong></strong>。</p>
+			</div>
+		</div>
+		<div id="container">
+			<div id="nav">
+				<ul>
+					<li v-bind:class="[type[0].current]">资讯中心</li>
+					<li v-bind:class="[type[1].current]">地理中国</li>
+					<li v-bind:class="[type[2].current]">环游世界</li>
+					<li v-bind:class="[type[3].current]">旅游攻略</li>
+					<li v-bind:class="[type[4].current]">必备常识</li>
+				</ul>
+			</div>
+			<div id="content" v-bind:style="style">
+				<h1 v-text="items.theme"></h1>
+				<ul class="body">
+					<h2 v-text="items.title"></h2>
+					<li v-cloak v-for="(item, index) in items.long">
+						<h3 v-on:click="turn(index + 1)"><span>{{ item.subtitle }}</span></h3>
+						<h4><em></em>{{ item.message }}</h4>
+					</li>
+					<li v-cloak class="short" v-for="(item, index) in items.short">
+						<p></p><span v-on:click="turn(index + 3)">{{ item.subtitle }}</span><strong>{{ item.time }}</strong>
+					</li>
+				</ul>
+			</div>
+			<p class="end">Copyright © 2018 Everend. All rights reserved.</p>
+		</div>
+	</body>
+</html>

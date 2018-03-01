@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>内容</title>
+		<link href="../extra/css/content.css" rel="stylesheet" type="text/css">
+		<script src="../extra/js/jquery-3.3.1.min.js"></script>
+		<script src="../extra/js/vue.min.js"></script>
+		<script src="../extra/js/vue-resource-1.3.6.min.js"></script>
+		<script src="../extra/js/content.js"></script>
+	</head>
+	<body>
+		<div id="line">
+			<div id="header">
+				<a href="/"title="Back to Home Page">&nbsp;July↺ Journey</a>
+				<p>欢迎访问<em>七月之旅</em>，既然来了还在等什么，随便看看吧！</p>
+				<!-- <p class="time">现在是<span></span>年<span></span>月<span></span>日星期<span></span><span></span>时<span></span>分<span></span>秒，您所在的<strong>台州</strong>地区天气为<strong>阴</strong>，气温为<strong>低温6℃</strong>，<strong>高温11℃</strong>。</p> -->
+				<p class="time">现在是<span></span>年<span></span>月<span></span>日星期<span></span><span></span>时<span></span>分<span></span>秒，您所在的<strong></strong>地区天气为<strong></strong>，气温为<strong></strong>，<strong></strong>。</p>
+			</div>
+		</div>
+		<div id="container">
+			<div id="nav">
+				<ul>
+					<!--<li v-bind:class="[type[0].current]">资讯中心</li>
+					<li v-bind:class="[type[1].current]">地理中国</li>
+					<li v-bind:class="[type[2].current]">环游世界</li>
+					<li v-bind:class="[type[3].current]">旅游攻略</li>
+					<li v-bind:class="[type[4].current]">必备常识</li>-->
+					<li>资讯中心</li>
+					<li>地理中国</li>
+					<li class="current">环游世界</li>
+					<li>旅游攻略</li>
+					<li>必备常识</li>
+				</ul>
+			</div>
+			<div id="content">
+				<!--<h1 v-text="items.title"></h1>--><h1>原驼：巴塔哥尼亚温顺的统治者们</h1>
+				<!--<h2 v-cloak><span>发布时间：{{ items.time }}</span>|<span>来源：网络</span>|<span>作者：{{ items.author }}</span></span>|<span>责任编辑：{{ items.editor }}</span></h2>-->
+				<h2><span>发布时间：2018-01-23 13:24:32</span>|<span>来源：网络</span>|<span>作者：尤紫璇</span></span>|<span>责任编辑：路遥</span></h2>
+				<ul class="body">
+					<li>
+						<!--<em></em><span v-html="items.intro" v-bind:style="items.introStyle"></span>
+						<div v-bind:style="items.image1"></div>-->
+						<em></em><span >修长的颈部，蓬松的皮毛，尖立的耳朵：在人们的眼里，原驼看起来古怪有趣。但这其实是大自然在进化过程中赐予它们的适应生存环境的法宝。</span>
+						<div style="background-image: url(../extra/img/world4-2.jpg);"></div>
+					</li>
+					<!--<li v-for="item in items.body">
+						<h3 v-cloak v-bind:style="item.subuse"><em></em>{{ item.sub }}</h3>
+						<em></em><span v-for="para in item.paras" v-html="para.text"></span><br>
+						<div v-bind:style="item.image"></div>
+					</li>-->
+					<li>
+						<em></em><span>在南美洲大陆上，曾经生活着大约5000万头原驼。如今，这个数字已经降到了50万。所幸，在智利南部，原驼的数量还在增长。在皑皑白雪覆盖下的安第斯山脚下，一群原驼开始了新的一天。这些容易满足的动物以草为食物，最多30头一群，过着群居的生活。在海拔4000米以上、大风呼啸的潘帕斯草原上同样可以见到它们的身影。<br>
+						<em></em>太阳落山，原驼的听觉和视觉就会变得格外敏锐，因为这意味着一天中最危险的时刻来临了：美洲狮最喜欢在这种昏暗的光线下狩猎。不过，比猛兽更危险的是人类：为了获得牧场资源，西班牙人几乎一度将它们赶尽杀绝，而如今，游客们不经意间造成的森林火灾则是国家公园最大的威胁。</span>
+						<div style="background-image: url(../extra/img/world4.jpg);"></div>
+					</li>
+					<li>
+						<em></em><span>一头雄性羊驼站在被染成金色的安第斯山上，像一位国王，审视着它的帝国。当年轻的原驼离开群族，它们会组成自己的小族群。当然，也有一些要独自面对荒野和群山。</span>
+						<div style="background-image: url(../extra/img/world4-3.jpg);"></div>
+					</li>
+					<li>
+						<em></em><span>在尘土中洗澡属于原驼每天的固定日程：它们用这种方式护理皮毛，给后背挠痒，同时还能赶走讨厌的寄生物。摄影师乌特辛纳发现，这是原驼日常生活中的最大乐趣。</span>
+						<div style="height: 1300px;background-image: url(../extra/img/world4-4.jpg);background-size: 860px 1300px;"></div>
+					</li>
+					<li>
+						<em></em><span>高高的个头有助于它们提前发现美洲狮，厚实的皮毛则能使它们免受巴塔哥尼亚寒风的折磨——人类制作纺织品时最喜欢选用的材料就来自原驼的“亲戚”羊驼。<br>
+						<em></em>采集，咀嚼，吞咽，咀嚼反刍的食物：进食花去了原驼这一美洲家养骆驼和羊驼的共同祖先大部分的时间。除了草类，原驼们还喜欢灌木的叶子、稚嫩的小树、蘑菇和地衣。它们可以依靠这些食物连续数日在没有水的状态下生存。</span>
+					</li>
+				</ul>
+			</div>
+			<p class="end">Copyright © 2018 Everend. All rights reserved.</p>
+		</div>
+	</body>
+</html>

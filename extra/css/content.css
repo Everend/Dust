@@ -1,0 +1,113 @@
+*{margin: 0;padding: 0;font-weight: normal;}
+[v-cloak]{display: none;}
+a{text-decoration: none;}
+li{list-style-type: none;}
+/*--line--*/
+#line{
+	position: absolute;top: 0px;width: 1349px;height: 60px;
+	background-color: rgb(100,100,100);
+}
+#line #header{
+	position: absolute;top: 0px;left: 50%;margin-left: -675px;padding-left: 39px;width: 1310px;height: 60px;
+	background-color: rgb(100,100,100);
+	perspective: 100px;
+}
+#header a{
+	display: table-cell;vertical-align: middle;width: 80px;height: 60px;
+	text-align: center;font: 18px/1 verdana;color: lightskyblue;
+	border-radius: 5px;
+	transition: transform 1s;
+}
+#header a:hover{
+	transform: rotateX(-360deg);
+}
+#header p{
+	position: absolute;top: 0px;left: 155px;height: 60px;
+	font: 16px/60px arial;color: white;
+}
+#header p em{
+	font-weight: bold;color: cyan;
+	cursor: pointer;
+}
+#header p em:hover{
+	animation: fade 1s infinite;
+}
+@keyframes fade{
+	from{color: cyan;}50%{color: rgb(100,100,100);}to{color: cyan;}
+}
+#header .time{
+	position: absolute;left: 580px;
+	white-space: nowrap;
+}
+.time span{
+	color: red;
+}
+.time span:nth-of-type(4){
+	color: white;
+}
+.time strong{
+	color: palegreen;
+}
+/*--container--*/
+#container{
+	position: absolute;top: 60px;left: 50%;margin-left: -675px;width: 1349px;
+	background-color: rgba(226,232,238,0.3);
+}
+/*--container nav--*/
+#container #nav{
+	position: absolute;top: 0px;left: 0px;z-index: 2;width: 1349px;height: 60px;
+	background-color: white;
+}
+#nav ul{
+	position: absolute; left: 365px;
+}
+#nav ul li{
+	float: left;padding: 0px 30px;
+	font: 16px/60px verdana;
+	cursor: pointer;
+}
+.current{
+	border-bottom: 2px solid red!important;
+}
+#nav li:hover{
+	background-color: wheat;
+}
+/*--container content--*/
+#container #content{
+	position: relative;margin-top: 80px;margin-left: 175px;width: 1000px;
+	border: 1px solid rgb(192,192,192);
+}
+#content h1{
+	margin: 30px auto 10px;width: 900px;padding-bottom: 20px;
+	font: bold 28px/1 arial;text-align: center;
+	border-bottom: 1px dashed silver;
+}
+#content h2{
+	margin: 0px auto;
+	font: 14px/1 auto;text-align: center;
+}
+#content h2>span{
+	margin: 0px 30px;
+}
+#content .body{
+	position: relative;margin: 20px auto;width: 900px;
+}
+.body li{
+	text-align: left;font: 16px/1.5 arial;
+}
+.body li h3{
+	margin-left: -4px;
+	font: bold 18px/2 arial;
+}
+.body li em{
+	padding: 0px 1em;
+}
+.body li div{
+	margin: 20px auto; width: 860px;height: 480px;
+	background-size: 860px 480px;border: 1px solid gray;
+}
+#container .end{
+	margin-top: 20px;height: 50px;
+	text-align: center;font: bold 15px/50px verdana;color: gray;
+	background-color: gainsboro;
+}
