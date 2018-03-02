@@ -5,7 +5,7 @@
 ### 部分预览图：<br>
 **首页：**
 
-<img src="./preview/index.png" width="100%">
+<img src="./preview/index.png" width="100%"><br>
 **主页：**
 
 <img src="./preview/main1.png" width="100%"><img src="./preview/main2.png" width="100%">
