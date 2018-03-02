@@ -26,7 +26,7 @@ $(function(){
 	//获取当前时间、地点和天气状况
 	var time = new Date(),
 		week = ['日', '一', '二', '三', '四', '五', '六'],
-		timeInfo = [time.getFullYear(), time.getMonth(), time.getDate(), week[time.getDay()],time.getHours(),time.getMinutes(), time.getSeconds()];
+		timeInfo = [time.getFullYear(), time.getMonth()+1, time.getDate(), week[time.getDay()],time.getHours(),time.getMinutes(), time.getSeconds()];
 	$('.time span').each(function(index){
 		$(this).text(timeInfo[index].toString().replace(/^(\d)$/,'0$1'));
 	});
