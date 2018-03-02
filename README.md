@@ -4,7 +4,7 @@
 ### 部分预览图：<br>
 <div>
 <img src="./preview/index.png" width="900" height="428">
-<img src="./preview/main1.png"width="49%"  height="253" float="left"><img src="./preview/main2.png" width="49%"  height="253" float="left">
+<img src="./preview/main1.png"width= "50%" float="left"><img src="./preview/main2.png" width="50%"float="left">
 <img src="./preview/nav1.png" width = "450" height = "253"><img src="./preview/nav2.png" width = "450" height = "253">
 <img src="./preview/content1.png" width = "900" height = "506"><img src="./preview/content2.png" width = "900" height = "506"><img src="./preview/content3.png" width = "900" height = "506">
 </div>
