@@ -9,7 +9,9 @@
 **主页：**
 
 <img src="https://raw.githubusercontent.com/Everend/Dust/master/preview/main1.png" width="100%">
+
 ---
+
 <img src="https://raw.githubusercontent.com/Everend/Dust/master/preview/main2.png" width="100%">
 **导航：**
 
