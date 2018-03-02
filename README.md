@@ -5,13 +5,13 @@
 ### 部分预览图：<br>
 **首页：**
 
-<img src="./preview/index.png" width="100%"><br>
+<img src="https://raw.githubusercontent.com/Everend/Dust/master/preview/index.png" width="100%"><br>
 **主页：**
 
-<img src="./preview/main1.png" width="100%"><img src="./preview/main2.png" width="100%">
+<img src="https://raw.githubusercontent.com/Everend/Dust/master/preview/main1.png" width="100%"><img src="https://raw.githubusercontent.com/Everend/Dust/master/preview/main2.png" width="100%">
 **导航：**
 
-<img src="./preview/nav1.png" width="100%"><img src="./preview/nav2.png" width="100%">
+<img src="https://raw.githubusercontent.com/Everend/Dust/master/preview/nav1.png" width="100%"><img src="https://raw.githubusercontent.com/Everend/Dust/master//nav2.png" width="100%">
 **内容：**
 
-<img src="./preview/content1.png" width="100%"><img src="./preview/content2.png" width="100%"><img src="./preview/content3.png" width="100%" >
+<img src="https://raw.githubusercontent.com/Everend/Dust/master/preview/content1.png" width="100%"><img src="https://raw.githubusercontent.com/Everend/Dust/master/preview/content2.png" width="100%"><img src="https://raw.githubusercontent.com/Everend/Dust/master/preview/content3.png" width="100%" >
